@@ -4,20 +4,20 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'men-doubles-info',
+    redirectTo: 'men-single',
     pathMatch: 'full'
   },
   {
     path: 'mix-doubles-info',
-    loadChildren: () => import('./pages/mix-doubles-info/mix-doubles-info.module').then( m => m.MixDoublesInfoPageModule)
+    loadChildren: () => import('./pages/mix-doubles-info/mix-doubles-info.module').then(m => m.MixDoublesInfoPageModule)
   },
   {
     path: 'men-doubles-info',
-    loadChildren: () => import('./pages/men-doubles-info/men-doubles-info.module').then( m => m.MenDoublesInfoPageModule)
+    loadChildren: () => import('./pages/men-doubles-info/men-doubles-info.module').then(m => m.MenDoublesInfoPageModule)
   },
   {
     path: 'men-single',
-    loadChildren: () => import('./pages/men-single/men-single.module').then( m => m.MenSinglePageModule)
+    loadChildren: () => import('./pages/men-single/men-single.module').then(m => m.MenSinglePageModule)
   }
 ];
 
