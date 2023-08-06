@@ -1,0 +1,57 @@
+.team-members {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.team-members th,
+.team-members td {
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.team-members th {
+    background-color: #f2f2f2;
+}
+
+.team-name {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.happy-tournament {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .happy-tournament-text {
+    font-size: 18px;
+    color: blueviolet;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 50px;
+    font-size: large;
+    font-weight: 600;
+    color: darkmagenta;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
