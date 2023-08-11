@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1691719295645,
+  "timestamp": 1691756182376,
   "index": "https://hoangvu1104.github.io/VietnameseTennisTournament/index.html",
   "assetGroups": [
     {
@@ -26,7 +26,7 @@
         "https://hoangvu1104.github.io/VietnameseTennisTournament/2698.118cf490b992512b.js",
         "https://hoangvu1104.github.io/VietnameseTennisTournament/2773.981bf4eb0da382f6.js",
         "https://hoangvu1104.github.io/VietnameseTennisTournament/3236.9f1fdc25131c4a1a.js",
-        "https://hoangvu1104.github.io/VietnameseTennisTournament/3267.1655d72b637fd2f9.js",
+        "https://hoangvu1104.github.io/VietnameseTennisTournament/3267.a9a7875e56231a0e.js",
         "https://hoangvu1104.github.io/VietnameseTennisTournament/3648.6e07154a7dca680d.js",
         "https://hoangvu1104.github.io/VietnameseTennisTournament/3804.2c931a9acd38d23e.js",
         "https://hoangvu1104.github.io/VietnameseTennisTournament/388.6f2d8f047fa7b893.js",
@@ -74,7 +74,7 @@
         "https://hoangvu1104.github.io/VietnameseTennisTournament/polyfills-core-js.20e9fb5568c66479.js",
         "https://hoangvu1104.github.io/VietnameseTennisTournament/polyfills-dom.3a5e3168052f1fc5.js",
         "https://hoangvu1104.github.io/VietnameseTennisTournament/polyfills.fc6fad8ce607b49d.js",
-        "https://hoangvu1104.github.io/VietnameseTennisTournament/runtime.79b3a50e2564d5f9.js",
+        "https://hoangvu1104.github.io/VietnameseTennisTournament/runtime.bfb095197371ad20.js",
         "https://hoangvu1104.github.io/VietnameseTennisTournament/styles.b8777235688abb5b.css"
       ],
       "patterns": []
@@ -120,7 +120,7 @@
     "https://hoangvu1104.github.io/VietnameseTennisTournament/2698.118cf490b992512b.js": "a8a0defea6184b3ffb0d109d9dc999e0855f64f2",
     "https://hoangvu1104.github.io/VietnameseTennisTournament/2773.981bf4eb0da382f6.js": "c919cc1fd365cdbaa8fba912e8dcd6544c3d1013",
     "https://hoangvu1104.github.io/VietnameseTennisTournament/3236.9f1fdc25131c4a1a.js": "4c8985fab57ae55ebac33ab8b6e1bdc40251192c",
-    "https://hoangvu1104.github.io/VietnameseTennisTournament/3267.1655d72b637fd2f9.js": "1c631067f1baf505ad0af717ed33d99878f162e9",
+    "https://hoangvu1104.github.io/VietnameseTennisTournament/3267.a9a7875e56231a0e.js": "c57d64b7458466d2091da3d171191e0b491779ba",
     "https://hoangvu1104.github.io/VietnameseTennisTournament/3648.6e07154a7dca680d.js": "aa3841fe7a115ea36c375b4eafc069c814573180",
     "https://hoangvu1104.github.io/VietnameseTennisTournament/3804.2c931a9acd38d23e.js": "4c61dab32f419b1801a7da3996bcada3ddb310f9",
     "https://hoangvu1104.github.io/VietnameseTennisTournament/388.6f2d8f047fa7b893.js": "410770bd0240b0e6280bf7280ddc395fbec89a28",
@@ -174,13 +174,13 @@
     "https://hoangvu1104.github.io/VietnameseTennisTournament/assets/images/LogoTennis.png": "71d25b15658341915cd68c16f9231333d121d97d",
     "https://hoangvu1104.github.io/VietnameseTennisTournament/assets/shapes.svg": "638f87e27e6fc7ddfd6e6b262ea70d690f6c7011",
     "https://hoangvu1104.github.io/VietnameseTennisTournament/common.ba89f17233b2d1b4.js": "430adef0a80a031f9e76e97d1b95d4e4be62d5e3",
-    "https://hoangvu1104.github.io/VietnameseTennisTournament/index.html": "0ba5d16a844cc9300dc9bc8c60f0758b3ce7dfb1",
+    "https://hoangvu1104.github.io/VietnameseTennisTournament/index.html": "8b9872b8118e1c1e7d581260555a53d62b3b4f3f",
     "https://hoangvu1104.github.io/VietnameseTennisTournament/main.cc9f385ee5f1400c.js": "2690c77cc52829b2dce71e406b1e8faae31c3e85",
     "https://hoangvu1104.github.io/VietnameseTennisTournament/manifest.webmanifest": "da2061dba175bf2d881980e8596ff5343e2dd7b6",
     "https://hoangvu1104.github.io/VietnameseTennisTournament/polyfills-core-js.20e9fb5568c66479.js": "7b2237821e79690f9dd2dac0b8a3b9ec6c229b76",
     "https://hoangvu1104.github.io/VietnameseTennisTournament/polyfills-dom.3a5e3168052f1fc5.js": "50f6ff473a0568bffb8a9d412d7efaced2d36137",
     "https://hoangvu1104.github.io/VietnameseTennisTournament/polyfills.fc6fad8ce607b49d.js": "29ecdc4392e1398b433f3838f08631c7ce701c6d",
-    "https://hoangvu1104.github.io/VietnameseTennisTournament/runtime.79b3a50e2564d5f9.js": "7973228370d3a3518559b4d006ec5300b764fd03",
+    "https://hoangvu1104.github.io/VietnameseTennisTournament/runtime.bfb095197371ad20.js": "2c056b67c3fd7ed6bf2af9063f783de3e7c962f0",
     "https://hoangvu1104.github.io/VietnameseTennisTournament/styles.b8777235688abb5b.css": "55fc6146d8b18952e8a65c1c5c070d08dbea04fd"
   },
   "navigationUrls": [
