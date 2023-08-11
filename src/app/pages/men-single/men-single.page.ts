@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonFunctions } from 'src/shared/commonFunctions';
 
 @Component({
   selector: 'app-men-single',
@@ -59,7 +60,7 @@ export class MenSinglePage implements OnInit {
       playerName: 'Hưng Tôn', level: 2.5 //12
     }
   ];
-  constructor() {
+  constructor(public commonFunction: CommonFunctions) {
 
     for (let i = 0; i < 2; i++) {
       this.MenPlayersLevelA.push(this.MenPlayersA1[i]);
@@ -74,10 +75,10 @@ export class MenSinglePage implements OnInit {
   }
 
   startGenerateTeams() {
-    this.shuffleArray(this.MenPlayersA1);
-    this.shuffleArray(this.MenPlayersA2);
-    this.shuffleArray(this.MenPlayersB1);
-    this.shuffleArray(this.MenPlayersB2);
+    this.commonFunction.shuffleArray(this.MenPlayersA1);
+    this.commonFunction.shuffleArray(this.MenPlayersA2);
+    this.commonFunction.shuffleArray(this.MenPlayersB1);
+    this.commonFunction.shuffleArray(this.MenPlayersB2);
     console.log('this.MenPlayersLevelA.length', this.MenPlayersLevelA.length);
     //GroupAA
     this.GroupAA.push(this.MenPlayersA1[0].playerName + ' (' + this.MenPlayersA1[0].level + ')');
@@ -105,39 +106,22 @@ export class MenSinglePage implements OnInit {
   }
 
   updateTeamsToShow() {
-    if (this.teamsToShowAA.length < this.GroupAA.length) {
-      this.teamsToShowAA.push(this.GroupAA[this.teamsToShowAA.length]);
-    }
-    if (this.teamsToShowAB.length < this.GroupAB.length) {
-      this.teamsToShowAB.push(this.GroupAB[this.teamsToShowAB.length]);
-    }
-    if (this.teamsToShowBA.length < this.GroupBA.length) {
-      this.teamsToShowBA.push(this.GroupBA[this.teamsToShowBA.length]);
-    }
-    if (this.teamsToShowBB.length < this.GroupBB.length) {
-      this.teamsToShowBB.push(this.GroupBB[this.teamsToShowBB.length]);
-    }
-    if (
-      this.teamsToShowAA.length < this.GroupAA.length ||
-      this.teamsToShowAB.length < this.GroupAB.length ||
-      this.teamsToShowBA.length < this.GroupBA.length ||
-      this.teamsToShowBB.length < this.GroupBB.length
-    ) {
+    for(let i = 0; i < 3; i++){
+      let playerAA = this.GroupAA[i];
+      let playerAB = this.GroupAB[i];
+      let playerBA = this.GroupBA[i];
+      let playerBB = this.GroupBB[i];
       setTimeout(() => {
-        this.updateTeamsToShow();
-      }, 1000);
+        this.teamsToShowAA.push(playerAA);
+        this.teamsToShowAB.push(playerAB);
+        this.teamsToShowBA.push(playerBA);
+        this.teamsToShowBB.push(playerBB);
+      }, 1000*(i));
     }
   }
 
   ngOnInit() {
     this.startCountdown();
-  }
-
-  shuffleArray(array: any[]): void {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
-    }
   }
 
   startCountdown() {
