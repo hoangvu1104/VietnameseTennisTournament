@@ -7,11 +7,11 @@ import { CommonFunctions } from 'src/shared/commonFunctions';
   styleUrls: ['./men-doubles-info.page.scss'],
 })
 export class MenDoublesInfoPage implements OnInit {
-  countdown = 10;
+  countdown = 30;
   teamsToShowGroupA: string[] = []; // Teams to show for Group A
-  teamsToShowGroupB: string[] = []; // Teams to show for Group B 
+  teamsToShowGroupB: string[] = []; // Teams to show for Group B
   GroupA: string[] = [];
-  GroupB: string[] = [];  
+  GroupB: string[] = [];
   MenPlayers: any[] = [];
   MenPlayersA1: any[] = [
     {
@@ -22,7 +22,7 @@ export class MenDoublesInfoPage implements OnInit {
     },
     {
       playerName: 'Hải Võ - Hiếu Phan', level: 3.5
-    },    
+    },
     {
       playerName: 'Nghiệp Trường - Thông Phạm', level: 3.5
     }
@@ -45,7 +45,7 @@ export class MenDoublesInfoPage implements OnInit {
 
   startGenerateTeams() {
     this.commonFunction.shuffleArray(this.MenPlayersA1);
-    this.commonFunction.shuffleArray(this.MenPlayersA2);       
+    this.commonFunction.shuffleArray(this.MenPlayersA2);
     //GroupA
     this.GroupA.push(this.MenPlayersA1[0].playerName + ' (' + this.MenPlayersA1[0].level + ')');
     this.GroupA.push(this.MenPlayersA1[1].playerName + ' (' + this.MenPlayersA1[1].level + ')');
@@ -53,22 +53,22 @@ export class MenDoublesInfoPage implements OnInit {
     //GroupB
     this.GroupB.push(this.MenPlayersA1[2].playerName + ' (' + this.MenPlayersA1[2].level + ')');
     this.GroupB.push(this.MenPlayersA1[3].playerName + ' (' + this.MenPlayersA1[3].level + ')');
-    this.GroupB.push(this.MenPlayersA2[1].playerName + ' (' + this.MenPlayersA2[1].level + ')');    
+    this.GroupB.push(this.MenPlayersA2[1].playerName + ' (' + this.MenPlayersA2[1].level + ')');
 
     console.log('startGenerateTeams 2');
     this.teamsToShowGroupA = []; // Teams to show for Group AA
-    this.teamsToShowGroupB = []; // Teams to show for Group AB    
+    this.teamsToShowGroupB = []; // Teams to show for Group AB
     this.updateTeamsToShow();
   }
 
   updateTeamsToShow() {
-    for(let i = 0; i < 3; i++){
+    for (let i = 0; i < 3; i++) {
       let playerAA = this.GroupA[i];
-      let playerAB = this.GroupB[i];      
+      let playerAB = this.GroupB[i];
       setTimeout(() => {
         this.teamsToShowGroupA.push(playerAA);
         this.teamsToShowGroupB.push(playerAB);
-      }, 1000*(i));
+      }, 1000 * (i));
     }
   }
 

@@ -7,7 +7,7 @@ import { CommonFunctions } from 'src/shared/commonFunctions';
   styleUrls: ['./men-single.page.scss'],
 })
 export class MenSinglePage implements OnInit {
-  countdown = 10;
+  countdown = 30;
   teamsToShowAA: string[] = []; // Teams to show for Group AA
   teamsToShowAB: string[] = []; // Teams to show for Group AB
   teamsToShowBA: string[] = []; // Teams to show for Group BA
@@ -106,7 +106,7 @@ export class MenSinglePage implements OnInit {
   }
 
   updateTeamsToShow() {
-    for(let i = 0; i < 3; i++){
+    for (let i = 0; i < 3; i++) {
       let playerAA = this.GroupAA[i];
       let playerAB = this.GroupAB[i];
       let playerBA = this.GroupBA[i];
@@ -116,7 +116,7 @@ export class MenSinglePage implements OnInit {
         this.teamsToShowAB.push(playerAB);
         this.teamsToShowBA.push(playerBA);
         this.teamsToShowBB.push(playerBB);
-      }, 1000*(i));
+      }, 1000 * (i));
     }
   }
 

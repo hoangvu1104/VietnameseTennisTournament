@@ -1,9 +1,9 @@
 <ion-content>
-  <ion-card  *ngIf="countdown != 0">
+  <ion-card>
     <ion-card-header>
       <ion-card-title>
         <ion-grid>
-          <ion-row>          
+          <ion-row>
             <ion-col size="12">
               <div class="team-name">Danh sách tham gia đôi nam nữ</div>
             </ion-col>
@@ -13,121 +13,23 @@
     </ion-card-header>
     <ion-card-content>
       <ion-grid>
-        <ion-row>          
-          <ion-col size="6"> 
+        <ion-row>
+          <ion-col size="12">
             <ion-list>
               <table class="team-members">
-                <thead>
-                  <tr>
-                    <th colspan="3">Danh sách tay vợt nữ</th>                  
-                  </tr>
-                  <tr>
-                    <th>#</th>
-                    <th>Tên</th>
-                    <th>Level</th>                   
-                  </tr>
-                </thead>
                 <tbody>
-                  <tr *ngFor="let player of WomenPlayersLevelA; let i = index" style="background-color: lightgreen;">
+                  <tr *ngFor="let player of MixedPlayers; let i = index" style="background-color: lightgreen;">
                     <td>{{ i + 1 }}</td>
                     <td>{{player.playerName}}</td>
-                    <td>{{player.level}}</td>                   
-                  </tr>
-                  <tr *ngFor="let player of WomenPlayersLevelB; let i = index" style="background-color: lightskyblue;">
-                    <td>{{ i + 1 }}</td>
-                    <td>{{player.playerName}}</td>
-                    <td>{{player.level}}</td>                   
-                  </tr>
-                </tbody>
-              </table>
-            </ion-list>
-          </ion-col>
-          <ion-col size="6"> 
-            <ion-list>
-              <table class="team-members">
-                <thead>
-                  <tr>
-                    <th colspan="3">Danh sách tay vợt nam</th>                  
-                  </tr>
-                  <tr>
-                    <th>#</th>
-                    <th>Tên</th>
-                    <th>Level</th>                   
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr *ngFor="let player of MenPlayersLevelA; let i = index" style="background-color: lightgreen;">
-                    <td>{{ i + 1 }}</td>
-                    <td>{{player.playerName}}</td>
-                    <td>{{player.level}}</td>                   
-                  </tr>
-                  <tr *ngFor="let player of MenPlayersLevelB; let i = index" style="background-color: lightskyblue;">
-                    <td>{{ i + 1 }}</td>
-                    <td>{{player.playerName}}</td>
-                    <td>{{player.level}}</td>                   
+                    <td>{{player.level}}</td>
                   </tr>
                 </tbody>
               </table>
             </ion-list>
           </ion-col>
         </ion-row>
-      </ion-grid>      
+      </ion-grid>
+      <img src="/VietnameseTennisTournament/assets/images/BannerTennis.png" />
     </ion-card-content>
-  </ion-card> 
-  <div class="happy-tournament" *ngIf="countdown != 0">
-    <span class="btn" (click)="startCountdown()">Chuẩn bị bốc thăm trong {{ countdown }} giây</span>
-  </div>
-  <ion-card  *ngIf="countdown == 0">
-    <ion-card-header>
-      <ion-card-title>
-        <ion-grid>
-          <ion-row>          
-            <ion-col size="12">
-              <div class="team-name">Kết quả bốc thăm chia nhóm đôi nam nữ</div>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-      </ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <ion-grid>
-        <ion-row>          
-          <ion-col size="6"> 
-            <ion-list>
-              <table class="team-members">
-                <thead>
-                  <tr>
-                    <th colspan="3">Nhóm A</th>                  
-                  </tr>                
-                </thead>
-                <tbody>
-                  <tr *ngFor="let player of teamsToShowA; let i = index" style="background-color: lightgreen;">
-                    <td>{{ i + 1 }}</td>
-                    <td>{{player}}</td>                                  
-                  </tr>                
-                </tbody>
-              </table>
-            </ion-list>
-          </ion-col>        
-          <ion-col size="6"> 
-            <ion-list>
-              <table class="team-members">
-                <thead>
-                  <tr>
-                    <th colspan="3">Nhóm B</th>                  
-                  </tr>                
-                </thead>
-                <tbody>
-                  <tr *ngFor="let player of teamsToShowB; let i = index" style="background-color: lightskyblue;">
-                    <td>{{ i + 1 }}</td>
-                    <td>{{player}}</td>                                  
-                  </tr>                
-                </tbody>
-              </table>
-            </ion-list>
-          </ion-col>       
-        </ion-row>       
-      </ion-grid>      
-    </ion-card-content>
-  </ion-card> 
+  </ion-card>
 </ion-content>
