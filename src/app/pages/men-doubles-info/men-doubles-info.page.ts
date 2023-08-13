@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonFunctions } from 'src/shared/commonFunctions';
+import { StaticVariable } from 'src/shared/staticVariable';
 
 @Component({
   selector: 'app-men-doubles-info',
@@ -7,6 +8,7 @@ import { CommonFunctions } from 'src/shared/commonFunctions';
   styleUrls: ['./men-doubles-info.page.scss'],
 })
 export class MenDoublesInfoPage implements OnInit {
+  imagePath = StaticVariable.ImagesPath + 'BannerTennis.png';
   countdown = 30;
   teamsToShowGroupA: string[] = []; // Teams to show for Group A
   teamsToShowGroupB: string[] = []; // Teams to show for Group B

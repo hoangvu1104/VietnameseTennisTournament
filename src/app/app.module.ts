@@ -11,6 +11,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { MenSinglePage } from './pages/men-single/men-single.page';
 import { MenDoublesInfoPage } from './pages/men-doubles-info/men-doubles-info.page';
 import { MixDoublesInfoPage } from './pages/mix-doubles-info/mix-doubles-info.page';
+import { MenSingleResultPage } from './pages/men-single-result/men-single-result.page';
+import { MenDoublesResultPage } from './pages/men-doubles-result/men-doubles-result.page';
 
 
 
@@ -21,7 +23,9 @@ import { MixDoublesInfoPage } from './pages/mix-doubles-info/mix-doubles-info.pa
     MenuComponent,
     MenSinglePage,
     MenDoublesInfoPage,
-    MixDoublesInfoPage],
+    MixDoublesInfoPage,
+    MenSingleResultPage,
+    MenDoublesResultPage],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, ServiceWorkerModule.register('ngsw-worker.js', {
     enabled: !isDevMode(),
     // Register the ServiceWorker as soon as the application is stable

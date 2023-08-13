@@ -12,6 +12,7 @@ export class MixDoublesInfoPage implements OnInit {
   ngOnInit(): void {
 
   }
+  imagePath = StaticVariable.ImagesPath + 'BannerTennis.png';
   MixedPlayers: any[] = [
     {
       playerName: 'Hạnh Minh - Tấn Lộc', level: 3.5

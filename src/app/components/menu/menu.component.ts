@@ -23,6 +23,16 @@ export class MenuComponent implements OnInit {
     this.menuCtrl.close();
   }
 
+  loadMenSingleResult() {
+    this.navCtrl.navigateRoot(RoutesUrl.MenSingleResult);
+    this.menuCtrl.close();
+
+  }
+  loadMenDoublesResult() {
+    this.navCtrl.navigateRoot(RoutesUrl.MenDoublesResult);
+    this.menuCtrl.close();
+  }
+
   loadMixedDoubles() {
     this.navCtrl.navigateRoot(RoutesUrl.MixedDoubles);
     this.menuCtrl.close();
